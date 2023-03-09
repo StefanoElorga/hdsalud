@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap");
+
+:root {
+  --font-desactive-color: #c4c4c4;
+}
+
+.topbar-container {
+  left: 0;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: fixed;
+  background: #eeeee6;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 6rem;
+  height: 6rem;
+  margin-right: 1rem;
+}
+
+.name {
+  font-family: "Calibri";
+  letter-spacing: 0.1rem;
+}
+
+.navigation-container {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.my-li {
+  list-style: none;
+  margin-left: 2rem;
+  font-family: "Calibri";
+}
+
+.navigation-buttons {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--font-desactive-color);
+  font-family: "Calibri";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  letter-spacing: 0.12rem;
+}
+
+.eye-img {
+  display: none;
+}
+
+.active > .eye-img {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  margin-left: 0.5rem;
+}
+
+.navigation-buttons:hover {
+  color: #000;
+  transition: 0.5s;
+}
+
+.active {
+  color: #000;
+}
+
+.bottom-line {
+  position: relative;
+  text-decoration: none;
+}
+
+.bottom-line::before,
+.bottom-line::after {
+  width: 0;
+  height: 0.15rem;
+  bottom: -0.06rem;
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #000;
+  transition: width 0.5s ease-in-out;
+}
+
+.bottom-line::before {
+  left: 0;
+}
+
+.bottom-line::after {
+  right: 0;
+}
+
+.bottom-line:hover::before,
+.bottom-line:hover::after {
+  width: 50%;
+}
+
+.bottom-line.active::before,
+.bottom-line.active::after {
+  width: 50%;
+}
+
+.webs-number-container {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  height: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.webs {
+  display: flex;
+  flex-direction: row;
+}
+
+.number-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.number {
+  font-size: 18px;
+  font-family: "Calibri";
+}

@@ -1,0 +1,27 @@
+#slider-section {
+  width: 100%;
+  height: 46rem;
+  margin-top: 6.2%;
+}
+
+#specialties-section {
+  width: 100%;
+  height: auto;
+}
+#doctor-presentation-section {
+  width: 100%;
+  height: 37rem;
+}
+#contact-section {
+  width: 100%;
+  height: auto;
+}
+#send-email-section {
+  width: 100%;
+  height: auto;
+  background-color: purple;
+}
+
+html {
+  scroll-behavior: smooth;
+}
