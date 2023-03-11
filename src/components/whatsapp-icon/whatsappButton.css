@@ -4,3 +4,21 @@
   right: 1.5rem;
   z-index: 999;
 }
+
+/* celular grande */
+
+@media screen and (max-width: 720px) {
+  .whatsapp-button {
+    bottom: 1rem;
+    right: 1rem;
+  }
+}
+
+/* celular mediano */
+
+@media screen and (max-width: 400px) {
+}
+
+/* celular chico */
+@media screen and (max-width: 370px) {
+}

@@ -69,9 +69,15 @@
   font-family: "Calibri";
 }
 
-.gif-eyes-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+@media screen and (max-width: 720px) {
+  .footer-basic ul {
+    font-size: 1rem;
+    padding: 0;
+    line-height: 1.6;
+    margin-bottom: 0;
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
 }

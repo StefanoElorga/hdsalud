@@ -33,8 +33,9 @@
 
 .container-cards {
   display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto auto;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto;
+  grid-gap: 2rem;
 }
 
 .card {
@@ -43,7 +44,6 @@
   width: 20rem;
   height: 25rem;
   background-color: none;
-  margin: 2rem;
   align-items: center;
 }
 
@@ -56,7 +56,7 @@
   width: 100%;
   height: 21.4rem;
   border-radius: 10rem;
-  filter: blur(0.2rem);
+  filter: blur(0.06rem);
 }
 
 .speciality-image:hover {
@@ -72,4 +72,81 @@
   text-align: start;
   color: #fff;
   font-family: "Calibri";
+}
+
+/* responnsive personalizado */
+@media screen and (max-width: 970px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .separator {
+    width: 80%;
+  }
+  .card:hover {
+    transform: none;
+    transition: none;
+  }
+}
+
+/* celular grande */
+
+@media screen and (max-width: 720px) {
+  .container-cards {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-gap: 2rem;
+    width: 100%;
+  }
+  .card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 14.5rem;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .card:hover {
+    transform: none;
+    transition: none;
+  }
+
+  .speciality-image {
+    width: 13.5rem;
+    height: 12rem;
+    border-radius: 50%;
+    filter: blur(0.06rem);
+  }
+
+  .speciality-name {
+    font-size: 1.5rem;
+    text-align: start;
+    margin: 0;
+    width: auto;
+  }
+}
+
+/* celular mediano */
+
+@media screen and (max-width: 400px) {
+  .title {
+    font-size: 1.5rem;
+  }
+}
+
+/* celular chico */
+@media screen and (max-width: 370px) {
+  .speciality-image {
+    width: 10.5rem;
+    height: 10rem;
+  }
+
+  .speciality-name {
+    font-size: 1.3rem;
+    text-align: start;
+    margin: 0;
+    width: auto;
+  }
 }

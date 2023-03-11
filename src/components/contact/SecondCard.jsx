@@ -16,7 +16,6 @@ export const SecondCard = () => {
         <p className="items-contact">Teléfono: 3795-109054</p>
         <p className="items-contact">@hdsalud</p>
       </div>
-      <img src={logo} alt="" className="logo-contact" />
     </div>
   );
 };

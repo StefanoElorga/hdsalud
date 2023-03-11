@@ -22,7 +22,6 @@ export const Card = () => {
           <li className="li-services">• Visión crómaticas</li>
         </ul>
       </div>
-      <img src={logo} alt="" className="logo-services" />
     </div>
   );
 };

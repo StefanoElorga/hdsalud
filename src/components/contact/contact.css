@@ -57,17 +57,17 @@
 }
 
 .services {
-  margin: 2rem 1.5rem 2.5rem 1rem;
+  margin: 0.5rem 0.5rem 0.5rem 0rem;
 }
 
 .title-services {
-  margin: 0.5rem 0 0 0.5rem;
+  margin: 0 0 0 1rem;
   font-size: 3rem;
   font-family: "Calibri";
 }
 
 .subtitle-services {
-  margin: 0 0 0.3rem 0.5rem;
+  margin: 0 0 0.5rem 1rem;
   font-size: 2rem;
   font-family: "Calibri";
 }
@@ -105,28 +105,28 @@
 .image-card-contact {
   width: 55%;
   height: 70%;
-  margin: 1.5rem 1.5rem 2.5rem 1rem;
+  margin: 1rem 1rem 1rem 1rem;
 }
 
 .info-card-contact {
-  margin: 2rem 1.5rem 2.5rem 0;
+  margin: 0.5rem 0.5rem 0.5rem 0;
 }
 
 .title-card-contact {
-  font-size: 3rem;
-  margin: 0 0 0.5rem;
+  font-size: 2.5rem;
+  margin: 0;
   font-family: "Calibri";
 }
 
 .subtitle-contact {
   font-size: 2rem;
-  margin: 0 0 1rem;
+  margin: 0 0 0.5rem 0;
   font-family: "Calibri";
 }
 
 .items-contact {
   font-size: 1.3rem;
-  margin: 0 0 1rem;
+  margin: 0 0 0.5rem 0;
   font-family: "Calibri";
 }
 
@@ -137,4 +137,73 @@
   margin-top: 22rem;
   margin-left: 44rem;
   position: absolute;
+}
+
+/* responnsive personalizado */
+@media screen and (max-width: 970px) {
+  .container-cards-service-contact {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-card-services {
+    width: 70%;
+    height: auto;
+    margin: 0 0 0.5rem 0;
+    flex-direction: column;
+  }
+
+  .image-services {
+    width: 100%;
+  }
+
+  .li-services {
+    font-size: 1.2rem;
+  }
+
+  .container-card-contact {
+    width: 70%;
+    height: auto;
+    margin: 0 0 0.5rem 0;
+    flex-direction: column;
+  }
+
+  .image-card-contact {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+/* celular grande */
+
+@media screen and (max-width: 720px) {
+  .title-card-contact {
+    font-size: 2rem;
+  }
+
+  .subtitle-contact {
+    font-size: 1.5rem;
+  }
+
+  .items-contact {
+    font-size: 1.3rem;
+  }
+
+  .title-services {
+    font-size: 2rem;
+  }
+
+  .subtitle-services {
+    font-size: 1.5rem;
+  }
+}
+
+/* celular mediano */
+
+@media screen and (max-width: 400px) {
+}
+
+/* celular chico */
+@media screen and (max-width: 370px) {
 }

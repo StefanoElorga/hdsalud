@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./topbar.css";
 import ourLogo from "../../imgs/logo.png";
-import ojoPrueba from "../../imgs/ojo-prueba.png";
 import { Facebook } from "../../imgs/svgs/Facebook";
 import { Instagram } from "../../imgs/svgs/Instagram";
 import { Phone } from "../../imgs/svgs/Phone";
@@ -33,7 +32,6 @@ export const Topbar = () => {
             className={`navigation-buttons bottom-line `}
           >
             Especialidades
-            <img src={ojoPrueba} alt="" className="eye-img" />
           </a>
         </li>
 
@@ -43,7 +41,6 @@ export const Topbar = () => {
             className={`navigation-buttons bottom-line `}
           >
             Contacto
-            <img src={ojoPrueba} alt="" className="eye-img" />
           </a>
         </li>
       </ul>

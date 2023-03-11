@@ -37,7 +37,7 @@
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem;
   grid-auto-rows: minmax(60px, auto);
-  width: 60%;
+  width: 50rem;
 }
 
 .send-email-input {
@@ -103,4 +103,42 @@
   border: none;
   transition: 1s;
   color: #000;
+}
+
+.textarea {
+  resize: vertical;
+}
+
+/* responnsive personalizado */
+@media screen and (max-width: 970px) {
+  .send-email-form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .send-email-title {
+    color: #fff;
+    font-size: 2rem;
+    font-family: "Calibri";
+  }
+  .send-email-input {
+    width: 100%;
+    height: 2rem;
+    margin-top: 2rem;
+  }
+}
+
+/* celular grande */
+
+@media screen and (max-width: 720px) {
+}
+
+/* celular mediano */
+
+@media screen and (max-width: 400px) {
+}
+
+/* celular chico */
+@media screen and (max-width: 370px) {
 }

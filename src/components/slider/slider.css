@@ -102,3 +102,21 @@
 .next {
   right: 0;
 }
+
+/* responnsive personalizado */
+@media screen and (max-width: 970px) {
+}
+
+/* celular grande */
+
+@media screen and (max-width: 720px) {
+}
+
+/* celular mediano */
+
+@media screen and (max-width: 400px) {
+}
+
+/* celular chico */
+@media screen and (max-width: 370px) {
+}

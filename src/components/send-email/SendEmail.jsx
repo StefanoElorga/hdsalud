@@ -57,7 +57,7 @@ export const SendEmail = () => {
         />
         <textarea
           type="text"
-          className="six send-email-input"
+          className="six send-email-input textarea"
           placeholder="tu consulta"
         />
 

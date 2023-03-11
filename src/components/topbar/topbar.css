@@ -22,6 +22,8 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  width: auto;
+  height: auto;
 }
 
 .logo {
@@ -33,6 +35,7 @@
 .name {
   font-family: "Calibri";
   letter-spacing: 0.1rem;
+  font-size: 2rem;
 }
 
 .navigation-container {
@@ -44,7 +47,7 @@
 
 .my-li {
   list-style: none;
-  margin-left: 2rem;
+  margin-right: 2rem;
   font-family: "Calibri";
 }
 
@@ -58,26 +61,13 @@
   align-items: center;
   flex-direction: row;
   letter-spacing: 0.12rem;
-}
-
-.eye-img {
-  display: none;
-}
-
-.active > .eye-img {
-  display: block;
-  width: 2rem;
-  height: 2rem;
-  margin-left: 0.5rem;
+  width: auto;
+  height: auto;
 }
 
 .navigation-buttons:hover {
   color: #000;
   transition: 0.5s;
-}
-
-.active {
-  color: #000;
 }
 
 .bottom-line {
@@ -118,7 +108,7 @@
 .webs-number-container {
   display: flex;
   flex-direction: column;
-  width: 20rem;
+  width: auto;
   height: 5rem;
   justify-content: center;
   align-items: center;
@@ -138,6 +128,73 @@
 }
 
 .number {
-  font-size: 18px;
+  font-size: 1.12rem;
   font-family: "Calibri";
+}
+
+/* responnsive personalizado */
+@media screen and (max-width: 970px) {
+  .navigation-container {
+    display: none;
+  }
+
+  .webs-number-container {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .logo-container {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+/* celular grande */
+
+@media screen and (max-width: 720px) {
+}
+
+/* celular mediano */
+
+@media screen and (max-width: 400px) {
+  .logo-container {
+    margin-left: auto;
+    margin-right: 0;
+  }
+  .logo {
+    width: 4rem;
+    height: 4rem;
+  }
+  .name {
+    font-size: 1.3rem;
+  }
+
+  .webs-number-container {
+    height: 4rem;
+    margin-right: auto;
+    margin-left: 0;
+  }
+
+  .webs {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .number {
+    font-size: 1rem;
+  }
+}
+
+/* celular chico */
+@media screen and (max-width: 370px) {
+  .name {
+    font-size: 1.1rem;
+  }
+  .logo-container {
+    margin-right: 0;
+  }
+  .webs-number-container {
+    margin-left: 0;
+  }
 }
